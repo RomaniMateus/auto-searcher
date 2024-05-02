@@ -46,8 +46,9 @@ def search_bing(query: str) -> None:
 
 
 # create a loop that searches for random words 10 times
-for _ in range(1):
+for _ in range(50):
     search_bing(random_word())
-    time.sleep(1)
+    driver.back()
+    time.sleep(1.5)
 
 driver.quit()
