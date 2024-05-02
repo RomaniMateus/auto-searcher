@@ -18,7 +18,7 @@ import string
 
 # Create options that store the user's profile
 options = webdriver.EdgeOptions()
-options.add_argument("--user-data-dir={}".format(os.getcwd() + r".\profile"))
+options.add_argument("--user-data-dir={}".format(os.getcwd() + r"./profile"))
 
 # Create the webdriver with the options
 driver = webdriver.Edge(options=options)
